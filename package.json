@@ -1,0 +1,40 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Polina Bolkiseva",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint './**/*.css'",
+    "lintfix": "stylelint './**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.2",
+    "del": "^6.0.0",
+    "gulp": "^5.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.5.6",
+    "postcss-combine-media-query": "^2.1.0",
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1"
+  },
+  "browserslist": [
+    "last 5 versions"
+  ]
+}

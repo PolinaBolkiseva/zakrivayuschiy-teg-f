@@ -1,1 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* stylelint-disable-next-line rule-empty-line-before */
+
+:root {
+  --font-family__main: 'Inter', sans-serif;
+  --font-family__for_decor: 'PressStart2P', sans-serif;
+  --font-size: calc(18 / 16 * 1rem);
+  --font-size-decore: calc(14 / 16 * 1rem);
+  --font-weight__main_heder: 715;
+  --font-weight__main_text: 410;
+  --font-weight__for_decor: 400;
+  --bg-grad:
+    repeating-linear-gradient(
+      rgb(211 211 211) 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgb(211 211 211) 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  --main-size: clamp(375px, calc(260.56338px + 30.516432vw), 700px);
+  --card-gap: 25px;
+  --button-margin: 25px;
+  --wotermark-margin: 25px;
+
+  --accent_color: black;
+  --button-text-color: white;
+  --main_color_heart: black;
+  --accent_color_heart: red;
+}
