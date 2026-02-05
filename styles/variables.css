@@ -3,7 +3,7 @@
 
 :root {
   --font-family__main: 'Inter', sans-serif;
-  --font-family__for_decor: 'PressStart2P', sans-serif;
+  --font-family__for_decor: 'PressStart2P', fantasy, sans-serif;
   --font-size: calc(18 / 16 * 1rem);
   --font-size-decore: calc(14 / 16 * 1rem);
   --font-weight__main_heder: 715;
@@ -24,6 +24,7 @@
   --card-gap: 25px;
   --button-margin: 25px;
   --wotermark-margin: 25px;
+  --border: 2px solid #000;
 
   --accent_color: black;
   --button-text-color: white;
